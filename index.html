@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="form1">
+            <form action="#">
+                <h2>Accede a tu Área Clientes</h2>
+                <h4>Elige tu documento</h4>
+                 <p> <input type="radio" class="left" name="documento"> DNI o Tarjeta de residencia</p>  
+                   <p><input type="radio" class="left" name="documento"> Pasaporte </p>
+                   
+                <h4>Número de documento</h4>
+                    <label for="numDoc"></label>    
+                    <input type="text" name="numDoc" placeholder="DNI o Tarjeta de residencia">
+
+                <h4>Fecha de nacimiento</h4>
+                    <label for="fechaNac"></label>
+                    <input type="date" name="fechaNac">
+
+                <p> <input type="checkbox" class="left" name="recordar"> Recordar</p>
+
+                <input type="button" value="Entrar" id="entrar">
+            </form>
+
+            <h5 class="info1"> <span class="naranja"> > </span> Acceder con DNI electrónico</h5>
+            <h5 class="info1"> <span class="naranja"> > </span> Más información sobre seguridad</h5>
+        </section>
+
+        <hr>
+
+        <section class="form2">
+            <form action="#">
+                <h2>Empieza creando tu usuario</h2>
+                
+                <div> <input type="text" class="nombre form-2" placeholder="Nombre(como sale en el DNI)" name="nombre" id="nombre"> </div>
+                <div> <input type="text" class="form2-box form-2" placeholder="1º apellido (como sale en el DNI)" name="ape1" id="ape1"> 
+                    <input type="text" class="form2-box form-2" placeholder="2º apellido (como sale en el DNI)" name="ape2" id="ape2"></div>
+                <div> 
+                    <select class="form2-box form-2" name="doc" id="doc">
+                        <option value="0">DNI</option>
+                        <option value="1">NIF</option>
+                        <option value="2">CERT. AEAT</option>
+                    </select>
+
+                    <input type="number" class="form2-box form-2 docu" placeholder="Número de documento">
+              </div>
+
+              <div> <input type="tel" class="form2-box form-2" name="tel" placeholder="Móvil" id="tel"> <input type="email" class="form2-box form-2" placeholder="Email" name="email" id="email">  </div>
+
+
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="form3">
+            <form action="#">
+             <p> 
+                <h2 class="info-form3">¿Eres nuevo?</h2>
+            </p>  
+
+            <p>
+                <h5 class="info-form3-2"> Regístrate para guardar tu información y hacer tus pedidos de forma más fácil y rápida. </h5> 
+            </p>
+
+            <label for="email">Email</label>
+            
+            <p> <input type="text" name="email" placeholder="Introduce tu email" id="email"></p>    
+            <label for="telefono">Teléfono</label> 
+            
+            
+            <p><input type="tel" name="telefono" placeholder="Tu teléfono" id="telefono"></p>     
+
+            <label for="contra">Contraseña</label>
+            <p>
+                <input type="password" name="contra" placeholder="Introduce tu contraseña" id="contra"></p>    
+            
+                <label for="contra2">Confirma tu contraseña</label>
+            <p>
+                <input type="password" name="contra" placeholder="Confirmar contraseña" id="contra"></p>   
+            
+                <p class="form3-check"> <input type="checkbox" class="left" name="recordar"> He leído y acepto <span class="politica">Política de privacidad</span></p>         
+                <p class="form3-check"> <input type="checkbox" class="left" name="recordar"> Sí, acepto recibir comunicaciones comercailes y ofertas personalizadas según mi perfil</p>        
+
+
+            <p> <input type="submit" class="boton3" value="Crea tu cuenta"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
